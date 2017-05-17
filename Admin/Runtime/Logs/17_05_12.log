@@ -1,0 +1,810 @@
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ route_check ] --START--
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Run CheckRoute Behavior [ RunTime:0.002806s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.002993s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Dispatcher.class.php 第 125 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ app_begin ] --START--
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002016s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002136s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | SQL: SHOW COLUMNS FROM `czxy_privilege` [ RunTime:0.006482s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | SQL: SHOW COLUMNS FROM `czxy_admin` [ RunTime:0.006752s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8] Use of undefined constant czxy_ - assumed 'czxy_' Db.class.php(660) : regexp code 第 1 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8] Use of undefined constant czxy_ - assumed 'czxy_' Db.class.php(660) : regexp code 第 1 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | SQL: SELECT a.*,GROUP_CONCAT(c.rname) as rname FROM czxy_admin a LEFT JOIN czxy_roleadmin b ON b.aid=a.id LEFT JOIN czxy_adminrole c ON c.id=b.rid GROUP BY a.id  [ RunTime:0.004047s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ view_template ] --START--
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002953s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.003093s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ view_parse ] --START--
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 186 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 186 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 220 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 220 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 154 行.
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Run ParseTemplate Behavior [ RunTime:0.043103s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.043209s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ view_filter ] --START--
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Run ContentReplace Behavior [ RunTime:0.001762s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Run TokenBuild Behavior [ RunTime:0.002018s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001651s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Run ShowRuntime Behavior [ RunTime:0.002083s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.007877s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ view_end ] --START--
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.001883s ]
+[ 2017-05-12T20:15:40+08:00 ] /health/Admin.php/Admin/Index/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.001989s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ route_check ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Run CheckRoute Behavior [ RunTime:0.001910s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.002300s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ app_begin ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000973s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001079s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ view_template ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Run LocationTemplate Behavior [ RunTime:0.000456s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.000579s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ view_parse ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 186 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 220 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 154 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | SQL: SHOW COLUMNS FROM `czxy_privilege` [ RunTime:0.003392s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | SQL: SHOW COLUMNS FROM `czxy_privilege` [ RunTime:0.004216s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | SQL: SELECT * FROM `czxy_privilege`  [ RunTime:0.000688s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Run ParseTemplate Behavior [ RunTime:0.049912s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.050008s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ view_filter ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Run ContentReplace Behavior [ RunTime:0.000625s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Run TokenBuild Behavior [ RunTime:0.000810s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000321s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Run ShowRuntime Behavior [ RunTime:0.001087s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003230s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ view_end ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000671s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000764s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ route_check ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Run CheckRoute Behavior [ RunTime:0.002187s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ route_check ] --END-- [ RunTime:0.002408s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Dispatcher.class.php 第 125 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ app_begin ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001310s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001479s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ view_template ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Run LocationTemplate Behavior [ RunTime:0.000670s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ view_template ] --END-- [ RunTime:0.000850s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ view_parse ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 186 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 220 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 154 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead 63a16aed536409667bc2bb138cd559ae.php 第 28 行.
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Run ParseTemplate Behavior [ RunTime:0.058865s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ view_parse ] --END-- [ RunTime:0.059046s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ view_filter ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Run ContentReplace Behavior [ RunTime:0.000783s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Run TokenBuild Behavior [ RunTime:0.000789s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000403s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Run ShowRuntime Behavior [ RunTime:0.002291s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004666s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ view_end ] --START--
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Run ShowPageTrace Behavior [ RunTime:0.001136s ]
+[ 2017-05-12T20:15:44+08:00 ] /health/Admin.php/Index/copy | INFO: Tag[ view_end ] --END-- [ RunTime:0.001272s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ route_check ] --START--
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Run CheckRoute Behavior [ RunTime:0.001225s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.001361s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Dispatcher.class.php 第 125 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ app_begin ] --START--
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000770s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000866s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | SQL: SHOW COLUMNS FROM `czxy_privilege` [ RunTime:0.002774s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | SQL: SHOW COLUMNS FROM `czxy_admin` [ RunTime:0.002691s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8] Use of undefined constant czxy_ - assumed 'czxy_' Db.class.php(660) : regexp code 第 1 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | SQL: SELECT COUNT(*) AS tp_count FROM czxy_admin a LEFT JOIN czxy_teach b ON b.aid=a.id
+                      
+                       WHERE a.id!=1 LIMIT 1   [ RunTime:0.003500s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8] Use of undefined constant czxy_ - assumed 'czxy_' Db.class.php(660) : regexp code 第 1 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | SQL: SELECT a.id,a.adminusername,b.idcard,b.sex,b.name,b.aid,b.onephoto FROM czxy_admin a LEFT JOIN czxy_teach b ON b.aid=a.id
+                      
+                       WHERE a.id!=1  [ RunTime:0.000676s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ view_template ] --START--
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000499s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000600s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ view_parse ] --START--
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 186 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 186 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 220 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 220 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 154 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8] Use of undefined constant onephoto - assumed 'onephoto' 4bd504728df71eba1f7fb0979c5d2389.php 第 37 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | NOTIC: [8] Use of undefined constant onephoto - assumed 'onephoto' 4bd504728df71eba1f7fb0979c5d2389.php 第 37 行.
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Run ParseTemplate Behavior [ RunTime:0.028777s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.028872s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ view_filter ] --START--
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Run ContentReplace Behavior [ RunTime:0.000501s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Run TokenBuild Behavior [ RunTime:0.000529s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000264s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000674s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002225s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ view_end ] --START--
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000636s ]
+[ 2017-05-12T20:15:48+08:00 ] /health/Admin.php/Stu/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000722s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ route_check ] --START--
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Run CheckRoute Behavior [ RunTime:0.001268s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ route_check ] --END-- [ RunTime:0.001407s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Dispatcher.class.php 第 125 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ app_begin ] --START--
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000777s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000874s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SHOW COLUMNS FROM `czxy_privilege` [ RunTime:0.004183s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SHOW COLUMNS FROM `czxy_illhistory` [ RunTime:0.007058s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SELECT * FROM `czxy_illhistory` WHERE ( `tid` = '3' )  [ RunTime:0.000575s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SHOW COLUMNS FROM `czxy_parttime` [ RunTime:0.007239s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SELECT * FROM `czxy_parttime` WHERE ( `tid` = '3' ) AND ( `type` = '社会团体' )  [ RunTime:0.002137s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SELECT * FROM `czxy_parttime` WHERE ( `tid` = '3' ) AND ( `type` = '学术团体' )  [ RunTime:0.000514s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SHOW COLUMNS FROM `czxy_academicinfo` [ RunTime:0.007028s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SELECT * FROM `czxy_academicinfo` WHERE ( `tid` = '3' )  [ RunTime:0.000528s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SHOW COLUMNS FROM `czxy_teach` [ RunTime:0.004053s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | SQL: SELECT * FROM `czxy_teach` WHERE ( `aid` = '3' ) LIMIT 1   [ RunTime:0.000607s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ view_template ] --START--
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Run LocationTemplate Behavior [ RunTime:0.000521s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ view_template ] --END-- [ RunTime:0.000620s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ view_parse ] --START--
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 186 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 402 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 406 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 220 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead ThinkTemplate.class.php 第 154 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8] Use of undefined constant aid - assumed 'aid' 032b2ac0aeef3dc4b1b7cfe584b24a7b.php 第 42 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8] Use of undefined constant position - assumed 'position' 032b2ac0aeef3dc4b1b7cfe584b24a7b.php 第 131 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8] Use of undefined constant ptime - assumed 'ptime' 032b2ac0aeef3dc4b1b7cfe584b24a7b.php 第 132 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8] Use of undefined constant groupname - assumed 'groupname' 032b2ac0aeef3dc4b1b7cfe584b24a7b.php 第 133 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8] Undefined offset: 1 032b2ac0aeef3dc4b1b7cfe584b24a7b.php 第 136 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8] Use of undefined constant position - assumed 'position' 032b2ac0aeef3dc4b1b7cfe584b24a7b.php 第 148 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8] Use of undefined constant ptime - assumed 'ptime' 032b2ac0aeef3dc4b1b7cfe584b24a7b.php 第 149 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | NOTIC: [8] Use of undefined constant groupname - assumed 'groupname' 032b2ac0aeef3dc4b1b7cfe584b24a7b.php 第 150 行.
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Run ParseTemplate Behavior [ RunTime:0.028956s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.029061s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ view_filter ] --START--
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Run ContentReplace Behavior [ RunTime:0.000511s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Run TokenBuild Behavior [ RunTime:0.000562s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000265s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Run ShowRuntime Behavior [ RunTime:0.000656s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002246s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ view_end ] --START--
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Run ShowPageTrace Behavior [ RunTime:0.000644s ]
+[ 2017-05-12T20:15:50+08:00 ] /health/Admin.php/Single/basic/tid/3 | INFO: Tag[ view_end ] --END-- [ RunTime:0.000733s ]

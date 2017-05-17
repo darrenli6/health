@@ -1,0 +1,49 @@
+<layout name="layout" />
+<link rel="stylesheet" href="__PUBLIC__/Css/stuindex.css" />
+
+ 
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<div class='status'>
+		<span>{$title}</span>
+	</div>
+	<table class='table'>
+		<tr>
+			<th>ID</th>
+			<th>用户名</th>
+			<th>教师姓名</th>
+			<th>免冠照片</th>
+			<th>身份证号</th>
+			<th>性别</th>
+			<th>操作</th>
+		</tr>
+		<foreach name='CData' item='v'>
+			<tr>
+			    <td width='50' align='center'>{$v.id}</td> 
+				<td width='50' align='center'>{$v.adminusername}</td>
+				<td width='100'>{$v.name}</td>
+				<td width="200">
+				      <if condition='$v["onephoto"]'>
+				       <img src="{$imagepath}{$v[onephoto]}" width="120px" height="120px" />
+				      <else />
+				         <img src="__PUBLIC__/Images/people.png" width="120px" height="120px" />
+				      </if>
+				</td>
+				<td  align='center'>
+					{$v.idcard}
+				</td>
+				<td  align='center'>
+					{$v.sex}
+				</td>
+				<td width='300' align='center'>
+				
+				<a href="{:U('Single/basic', array('tid' => $v['aid']))}" class='see'></a>
+				
+			
+				 </td>
+			</tr>
+		</foreach>
+		<tr height='50'>
+			<td align='center' colspan='7'>{$page}</td>
+		</tr>
+		
+	</table>

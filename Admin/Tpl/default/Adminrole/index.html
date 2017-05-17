@@ -1,0 +1,30 @@
+<layout name="layout" />
+<a href="{:U('add')}" class='addbtn' ></a> 
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<div class='status'>
+		<span>{$title}</span>
+	</div>
+	<table class='table'>
+		<tr>
+			<th>ID</th>
+			<th>角色名称</th>
+			<th>角色权限</th>
+			<th>操作</th>
+		</tr>
+		<foreach name='data' item='v'>
+			<tr>
+				<td width='50' align='center'>{$v.id}</td>
+				<td width='100'>{$v.rname}</td>
+				<td align='center'>
+					 {$v.priname}
+				</td>
+				<td width='100' align='center'>
+				<a href="{:U('edit', array('id' => $v['id']))}" class='edit'></a>
+				<a href="{:U('del', array('id' => $v['id']))}" class='del'></a> 
+				 </td>
+			</tr>
+		</foreach>
+		<tr height='50'>
+			<td align='center' colspan='7'>{$page}</td>
+		</tr>
+	</table>

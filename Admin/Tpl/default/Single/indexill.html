@@ -1,0 +1,30 @@
+<layout name="layout" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /> 
+    <a href="{:U('addill')}" class='addbtn' ></a> 
+	<div class='status'>
+		<span>{$title}</span>
+	</div>
+	<table class="table">
+		<tr>
+		    <th>ID</th>
+			<th>名称</th>
+			<th>开始时间</th>
+			<th>结束时间</th>
+			
+			<th>操作</th>
+		</tr>
+		<?php foreach($illData as $k=>$v): ?>
+			<tr>
+			    <td><?php echo $v['id']; ?></td>
+				<td><?php echo $v['illname']; ?></td>
+				<td><?php echo $v['illstart']; ?></td>
+				<td><?php echo $v['illend']; ?></td>
+			
+				<td width='240'>
+                <a href="{:U('editill', array('id' => $v['id']))}" class='edit'></a>
+				<a href="{:U('delill', array('id' => $v['id']))}" class='del'></a>
+				</td>
+			</tr>
+		<?php endforeach; ?>
+	</table>
+ 

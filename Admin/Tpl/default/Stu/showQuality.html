@@ -1,0 +1,39 @@
+ <layout name="layout" />
+<p>
+<a href="{:U('addQuality',array('sid'=>$sid))}" class='addbtn' ></a> 
+</p>
+ 
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<div class='status'>
+		<span>{$title}</span>
+	</div>
+	<table class='table'>
+		<tr>
+			<th>ID</th>
+			<th>学号</th>
+			<th>姓名</th>
+			<th>时间</th>
+			<th>素质拓展项目</th>
+			<th>分数</th>
+			<th>操作</th>
+		</tr>
+		<foreach name='qsData' item='v'>
+			<tr>
+			    <td width='50' align='center'>{$v.id}</td> 
+				<td width='50' align='center'>{$v.stuid}</td>
+				<td width='100'>{$v.stuname}</td>
+				<td width='100'>{$v.addtime}</td>
+                <td width='100'>{$v.qualityname}</td>
+                <td width='100'>{$v.store}</td> 
+				<td width='300' align='center'>
+				<a href="{:U('editQuality', array('id' => $v['id'],'sid'=>$v['sid']))}" class='edit'></a>
+				<a href="{:U('delQuality', array('id' => $v['id']))}" class='del'></a> 
+				 </td>
+			</tr>
+		</foreach>
+		<tr height='50'>
+			<td align='center' colspan='7'>{$page}</td>
+		</tr>
+		 
+	</table>
+ 

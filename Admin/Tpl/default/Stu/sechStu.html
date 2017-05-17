@@ -1,0 +1,120 @@
+ <layout name="layout" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ 
+	<div class='status'>
+		<span>{$title}</span>
+	</div>
+	<div style='width:600px;text-align:center;margin : 20px auto;'>
+		<form name="findform"  >
+			检索方式：
+			<select name="type">
+				<option value="0">学生姓名</option>
+				<option value="1">学号</option>
+			</select>
+			<input type="text" name='sech'/>
+			<input type="button"  value='' class='see'/>
+		    <input type="button"  value='' class="print" />
+		</form>
+	</div>
+	<table class="table" id="table">
+		<if condition='isset($stu) && !$stu'>
+			<tr>
+				<td align='center'>没有检索到相关学生信息</td>
+			</tr>
+		<else/>
+			<tr>
+				<th>ID</th>
+				<th>学号</th>
+				<th>姓名</th>
+				<th>免冠图片</th>
+				<th>班级</th>
+				<th>操作</th>
+			</tr>
+				<foreach name='stu' item='v'>
+			<tr>
+			    <td width='50' align='center'>{$v.id}</td> 
+				<td width='50' align='center'>{$v.stuid}</td>
+				<td width='100'>{$v.stuname}</td>
+				<td width="200">
+				      <if condition='$v["face"]'>
+				       <img src="{$imagepath}{$v[face]}" width="120px" height="120px" />
+				      <else />
+				         <img src="__PUBLIC__/images/people.png" width="120px" height="120px" />
+				      </if>
+				</td>
+				<td  align='center'>
+					{$v.name}
+				</td>
+				<td width='300' align='center'>
+				<a href="{:U('show', array('id' => $v['id']))}" class='see'></a>
+				<a href="{:U('edit', array('id' => $v['id']))}" class='edit'></a>
+				<a href="{:U('del', array('id' => $v['id'],'stuid'=>$v['stuid']))}" class='del'></a> 
+				 </td>
+			</tr>
+		</foreach>
+		</if>
+	</table>
+</body>
+<script type="text/javascript">
+    var printStu="{:U('printStu')}";
+    var showStu="{:U('sechStu')}";
+    var imagepath="{$imagepath}";
+    var publicpath="__PUBLIC__";
+    
+    
+   $('input[class=print]').click(function(e){
+	     var type=$('select[name=type]').val();
+	     var val=$('input[name=sech]').val();
+	     if(type=='' || val=='')
+	     {
+	    	 alert('请您填写信息');
+	    	 return false;
+	     }
+	     window.location.href=printStu+"?type="+type+"&val="+val;
+   });
+   
+   $('input[class=see]').click(function(e){
+	     var type=$('select[name=type]').val();
+	     var val=$('input[name=sech]').val();
+	     $.ajax({
+	    	 url:showStu,
+	    	 data:{type:type,sech:val},
+	    	 type:'GET',
+	    	 datatype:'json',
+	    	 success:function(msg){
+	    		 
+	    		var msg=eval("("+msg+")");
+	    		console.log(msg);
+	            var html="";
+	    		if(msg!=null){
+	      html+="<tr><th>ID</th><th>学号</th><th>姓名</th><th>免冠图片</th>";
+ 	      html+="<th>班级</th><th>操作</th></tr>";
+				$.each(msg,function(k,v){
+		  html+="<tr> <td width='50' align='center'>"+v.id+"</td> ";
+		  html+="<td width='50' align='center'>"+v.stuid+"</td>";
+		  html+="<td width='100'>"+v.stuname+"</td>";
+		  if(v.face!=null){
+		  html+="<td width='200'> <img src="+imagepath+v.face+" width='120px' height='120px' /></td>";
+		  }
+		  else{
+		 
+		  html+="<td width='200'><img src='"+publicpath+"/images/people.png' width='120px' height='120px' /></td>";
+		  }
+		  html+="<td  align='center'>"+v.name+"</td>";
+		  html+="<td width='300' align='center'>";
+		  html+="<a href=\"{:U('showStu', array('id' => "+v.id+"))}\" class='see'></a>";
+		  html+="<a href=\"{:U('edit', array('id' => "+v.id+"))}\" class='edit'></a>";
+		  html+="<a href=\"{:U('del', array('id' =>"+v.id+",'stuid'=>"+v.stuid+"))}\" class='del'></a>";
+		  html+= "</td></tr>";
+				});
+	      
+	    		}else{
+				   html+="<tr><td align='center'>没有检索到相关用户</td></tr>"
+				}	
+	     $('#table').html(html);	
+	    		
+	    	 },
+	     });
+   });
+</script>
+</html>

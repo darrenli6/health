@@ -1,0 +1,229 @@
+
+//管理员列表
+create table czxy_admin(
+    id int unsigned primary key auto_increment comment 'id',
+    adminusername varchar(45) not null comment '用户名',
+    password varchar(45) not null comment '密码',
+    lasttime varchar(50) not null comment '最近登录时间',
+    lastip   varchar(50) not null comment '最近登录IP',
+    locked  tinyint default 1 comment '0为锁定1为开放'
+)engine=InnoDB default charset=utf8 comment '管理员列表';
+
+alter table czxy_admin add index(adminusername);
+//管理员角色
+create table czxy_adminrole(
+    id int unsigned primary key auto_increment comment 'id',
+    rname varchar(45) not null comment '管理员角色'
+)engine=InnoDB default charset=utf8 comment '管理员角色';
+
+
+//管理-角色
+create table czxy_roleadmin(
+   rid int unsigned comment '角色id',
+   aid int unsigned comment '管理员id',
+   index(rid,aid)
+)engine=InnoDB default charset=utf8 comment '管理-角色'; 
+//权限
+create table czxy_privilege(
+   id int unsigned primary key auto_increment comment 'id',
+   priname varchar(45) not null comment '权限名称',
+   modulename varchar(45) not null comment '模块名称',
+   controllername varchar(45) not null comment '控制器名称',
+   actionname varchar(45) not null comment '方法名称',
+   parentid int unsigned not null comment '父id'
+)engine=InnoDB default charset=utf8 comment '权限列表';
+
+
+create table czxy_teach(
+  id int unsigned primary key auto_increment comment 'id',
+  name varchar(15) not null comment '教师的名字',
+  sex enum('男','女') default '男' comment '性别',
+  birthday varchar(30) not null comment '出生日期',
+  toschooltime varchar(20) not null comment '入校时间',
+  idcard char(18) not null comment '身份证号',
+  address varchar(100) not null comment '家庭住址',
+  tel varchar(18) not null comment '电话',
+  healthstatue varchar(20) not null comment '健康状况',
+  basicjob varchar(50) not null comment '所在基层单位',
+  teachachievement varchar(655) not null comment '教学成果',
+  scienceachievement varchar(655) not null comment '科研成果',
+  studyresearch varchar(655) not null comment '学术研究',
+  aid int unsigned not null comment '一对一对应admin表',
+  index(aid)
+)engine=InnoDB default charset=utf8 comment '教师信息';
+
+ create table czxy_academicinfo(
+     id int unsigned primary key auto_increment comment 'id',
+     graduatetime varchar(30) not null comment '毕业时间',
+     graduateschool varchar(30) not null comment '毕业学校',
+     major varchar(100) not null comment '所学的专业',
+     tid  int unsigned not null comment '对应的是teach表中的id',
+     index(tid)
+ )engine=InnoDB default charset=utf8 comment '学历情况';
+
+ create table czxy_parttime(
+     id int unsigned primary key auto_increment comment 'id',
+     position varchar(50) not null comment '职务',
+     ptime varchar(50) not null comment '任职时间',
+     groupname varchar(100) not null comment '社会团体名称',
+     type varchar(20) not null  comment '社会团体-学术团体',
+     tid  int unsigned not null comment '对应的是teach表中的id',
+     index(tid)
+ )engine=InnoDB default charset=utf8 comment '社会兼职';
+
+ create table czxy_illhistory(
+     id int unsigned primary key auto_increment comment 'id',
+     illname varchar(255) not null comment '名称',
+     illstart varchar(50) not null comment '生病时间',
+     illend varchar(50) not null comment '生病结束时间',
+     tid  int unsigned not null comment '对应的是teach表中的id',
+     index(tid)
+ )engine=InnoDB default charset=utf8 comment '病史';
+ 
+
+//prililege-admin
+create table czxy_rolepri(
+   pid int unsigned comment '权限id',
+   rid int unsigned comment '管理员id',
+   index(pid,rid)
+)engine=InnoDB default charset=utf8 comment '权限-角色';
+
+
+create database czxyvideo;
+use czxyvideo;
+CREATE TABLE `chushou_table` (
+  `vname` char(255) DEFAULT NULL comment '影碟名称',
+  `vnumber` int(11) NOT NULL comment '影碟码',
+  `name` char(255) DEFAULT NULL  comment '会员名',
+  `phone` char(255) DEFAULT NULL  comment '联系电话',
+  `price` int(11) DEFAULT NULL  comment '售价',
+  `stock_number` int(11) DEFAULT NULL comment '库存量',
+  PRIMARY KEY (`vnumber`),
+  KEY `vname` (`vname`),
+  KEY `vnumber` (`vnumber`),
+  KEY `name` (`name`),
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 comment '出售表';
+
+
+
+CREATE TABLE `huiyuan_table` (
+  `name` char(255) NOT NULL comment '姓名',
+  `sex` char(255) DEFAULT NULL comment '性别',
+  `phone` char(255) DEFAULT NULL comment '电话',
+  `family-address` char(255) DEFAULT NULL comment '家庭住址',
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 comment '会员表';
+
+
+
+CREATE TABLE `jiehuan_table` (
+  `vname` char(255) DEFAULT NULL comment '影碟名称',
+  `vnumber` int(11) NOT NULL comment '影碟码',
+  `stock_number` int(11) DEFAULT NULL comment '库存量',
+  `name` char(255) DEFAULT NULL comment '会员名',
+  `phone` char(255) DEFAULT NULL comment '联系电话',
+  `rental-price` int(11) DEFAULT NULL comment '租价',
+  `return-date` char(255) DEFAULT NULL comment '是否按期归还',
+  `outdate-price` int(11) DEFAULT NULL comment '超期费用',
+  `rent-date` int(11) DEFAULT NULL comment '借租天数',
+  PRIMARY KEY (`vnumber`),
+  KEY `name` (`name`)
+ 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 comment '借还表';
+
+-- ----------------------------
+-- Records of jiehuan_table
+-- ----------------------------
+INSERT INTO `jiehuan_table` VALUES ('十月围城', '1211', '22', '张帆', '18835571234', '2', '是', '1', '2');
+INSERT INTO `jiehuan_table` VALUES ('孤胆拯救', '1311', '24', '李丽', '18835576789', '2', '否', '1', '3');
+INSERT INTO `jiehuan_table` VALUES ('你好，陌生人', '2122', '16', '杨慧', '18835578901', '4', '是', '0', '3');
+INSERT INTO `jiehuan_table` VALUES ('致命请柬', '3333', '17', '杨慧', '18835578901', '2', '是', '0', '2');
+INSERT INTO `jiehuan_table` VALUES ('胡桃夹子：魔镜冒险', '4144', '24', '张三', '18835575678', '2', '否', '3', '5');
+INSERT INTO `jiehuan_table` VALUES ('食人虫', '4544', '9', '丁凡', '18835578899', '2', '否', '2', '4');
+INSERT INTO `jiehuan_table` VALUES ('斗牛', '5155', '27', '王阳', '18835572345', '4', '是', '0', '4');
+INSERT INTO `jiehuan_table` VALUES ('微微一笑很倾城', '6366', '22', '杨阳', '18835572378', '2', '否', '1', '2');
+INSERT INTO `jiehuan_table` VALUES ('斯巴达300勇士', '7477', '21', '吴丽', '18835574690', '4', '是', '0', '3');
+INSERT INTO `jiehuan_table` VALUES ('爸爸的三次还礼', '8388', '21', '李明', '18835570123', '2', '是', '0', '3');
+
+-- ----------------------------
+-- Table structure for leibie_table
+-- ----------------------------
+DROP TABLE IF EXISTS `leibie_table`;
+CREATE TABLE `leibie_table` (
+  `type` char(255) NOT NULL comment '类型',
+  `describe` char(255) DEFAULT NULL comment '描述',
+  PRIMARY KEY (`decribe`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of leibie_table
+-- ----------------------------
+INSERT INTO `leibie_table` VALUES ('动作片', '精彩的武打动作场面');
+INSERT INTO `leibie_table` VALUES ('历史片', '观看各国历史长流，数风流人物');
+INSERT INTO `leibie_table` VALUES ('喜剧片', '无厘头搞笑带给您无穷的欢乐');
+INSERT INTO `leibie_table` VALUES ('家庭片', '小人物的悲欢离合');
+INSERT INTO `leibie_table` VALUES ('恐怖片', '想不到的剧情给您猝不及防的视觉冲击');
+INSERT INTO `leibie_table` VALUES ('战争片', '以史实为依据深入刻画历史事件，引人深思');
+INSERT INTO `leibie_table` VALUES ('爱情片', '引你回忆自己当初那些年少青葱的岁月');
+INSERT INTO `leibie_table` VALUES ('科幻片', '建立在科学上的幻想性影片');
+
+-- ----------------------------
+-- Table structure for yingdie_table
+-- ----------------------------
+DROP TABLE IF EXISTS `yingdie_table`;
+CREATE TABLE `yingdie_table` (
+  `type` char(255) DEFAULT NULL comment '类型',
+  `vname` char(255) DEFAULT NULL comment '名称',
+  `vnumber` int(11) NOT NULL comment '影碟码',
+  `bookman` char(255) DEFAULT NULL comment '出版商',
+  `price` int(11) DEFAULT NULL comment '售价',
+  `stock_number` int(11) DEFAULT NULL comment '库存量',
+  PRIMARY KEY (`vnumber`),
+  KEY `vname` (`vname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 comment '影碟表';
+
+-- ----------------------------
+-- Records of yingdie_table
+-- ----------------------------
+INSERT INTO `yingdie_table` VALUES ('动作', '智取威虎山', '1111', '华谊影业', '7', '13');
+INSERT INTO `yingdie_table` VALUES ('动作', '十月围城', '1211', '北京影业', '5', '24');
+INSERT INTO `yingdie_table` VALUES ('动作', '孤胆拯救', '1311', '熊猫影业', '6', '25');
+INSERT INTO `yingdie_table` VALUES ('动作', '魔兽', '1411', '鲸鱼影业', '8', '23');
+INSERT INTO `yingdie_table` VALUES ('动作', '绝地逃亡', '1511', '基美影业', '9', '22');
+INSERT INTO `yingdie_table` VALUES ('喜剧片', '你好，陌生人', '2122', '华谊影业', '8', '17');
+INSERT INTO `yingdie_table` VALUES ('喜剧片', '暴走神探', '2222', '北京影业', '9', '35');
+INSERT INTO `yingdie_table` VALUES ('喜剧片', '大内密探零零狗', '2322', '熊猫影业', '8', '26');
+INSERT INTO `yingdie_table` VALUES ('喜剧片', '美人鱼', '2422', '鲸鱼影业', '8', '27');
+INSERT INTO `yingdie_table` VALUES ('喜剧片', '倒霉特工熊', '2522', '基美影业', '7', '17');
+INSERT INTO `yingdie_table` VALUES ('恐怖片', '孤岛惊魂', '3133', '华谊影业', '6', '14');
+INSERT INTO `yingdie_table` VALUES ('恐怖片', '惊悚之夜', '3233', '北京影业', '4', '24');
+INSERT INTO `yingdie_table` VALUES ('恐怖片', '致命请柬', '3333', '熊猫影业', '5', '18');
+INSERT INTO `yingdie_table` VALUES ('恐怖片', '育婴室', '3433', '鲸鱼影业', '6', '11');
+INSERT INTO `yingdie_table` VALUES ('恐怖片', '半夜叫你别回头', '3533', '基美影业', '8', '12');
+INSERT INTO `yingdie_table` VALUES ('科幻片', '黑蝙蝠崛起', '4244', '北京影业', '6', '27');
+INSERT INTO `yingdie_table` VALUES ('科幻片', '王者之剑', '4344', '熊猫影业', '8', '26');
+INSERT INTO `yingdie_table` VALUES ('科幻片', '寄生兽', '4444', '鲸鱼影业', '6', '19');
+INSERT INTO `yingdie_table` VALUES ('科幻片', '食人虫', '4544', '基美影业', '5', '10');
+INSERT INTO `yingdie_table` VALUES ('战争片', '斗牛', '5155', '华谊影业', '8', '28');
+INSERT INTO `yingdie_table` VALUES ('战争片', '战国', '5255', '北京影业', '9', '30');
+INSERT INTO `yingdie_table` VALUES ('战争片', '金陵十三钗', '5355', '熊猫影业', '7', '29');
+INSERT INTO `yingdie_table` VALUES ('战争片', '战狼', '5455', '鲸鱼影业', '8', '14');
+INSERT INTO `yingdie_table` VALUES ('战争片', '天将雄狮', '5555', '基美影业', '9', '15');
+INSERT INTO `yingdie_table` VALUES ('爱情片', '七月与安生', '6166', '华谊影业', '9', '23');
+INSERT INTO `yingdie_table` VALUES ('爱情片', '谁的青春不迷茫', '6266', '北京影业', '8', '27');
+INSERT INTO `yingdie_table` VALUES ('爱情片', '微微一笑很倾城', '6366', '熊猫影业', '7', '23');
+INSERT INTO `yingdie_table` VALUES ('爱情片', '28岁未成年', '6466', '鲸鱼影业', '7', '22');
+INSERT INTO `yingdie_table` VALUES ('爱情片', '从你的全世界走过', '6566', '基美影业', '9', '19');
+INSERT INTO `yingdie_table` VALUES ('历史片', '大唐玄奘', '7177', '华谊影业', '8', '18');
+INSERT INTO `yingdie_table` VALUES ('历史片', '百团大战', '7277', '北京影业', '9', '24');
+INSERT INTO `yingdie_table` VALUES ('历史片', '轩辕大帝', '7377', '熊猫影业', '6', '23');
+INSERT INTO `yingdie_table` VALUES ('历史片', '斯巴达300勇士', '7477', '鲸鱼影业', '6', '22');
+INSERT INTO `yingdie_table` VALUES ('历史片', '一九四二', '7577', '基美影业', '7', '19');
+INSERT INTO `yingdie_table` VALUES ('家庭片', '九条命', '8188', '华谊影业', '8', '17');
+INSERT INTO `yingdie_table` VALUES ('家庭片', '亲爱的', '8288', '北京影业', '6', '19');
+INSERT INTO `yingdie_table` VALUES ('家庭片', '爸爸的三次婚礼', '8388', '熊猫影业', '6', '22');
+INSERT INTO `yingdie_table` VALUES ('家庭片', '失孤', '8488', '鲸鱼影业', '7', '23');
+INSERT INTO `yingdie_table` VALUES ('家庭片', '硬汉奶爸', '8588', '基美影业', '7', '19');
+
+
+

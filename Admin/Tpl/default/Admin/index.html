@@ -1,0 +1,59 @@
+<layout name="layout" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /> 
+    <a href="{:U('add')}" class='addbtn' ></a> 
+	<div class='status'>
+		<span>{$title}</span>
+	</div>
+	<table class="table">
+		<tr>
+			<th>ID</th>
+			<th>管理员名称</th>
+			<th>角色</th>
+			<th>最后登录时间</th>
+			<th>最后登录IP</th>
+			<th colspan="2">账号状态</th>
+			<if condition='$_SESSION["adminusername"]=="admin"'>
+				<th>操作</th>
+			</if>
+		</tr>
+		<foreach name='admin' item='v'>
+			<tr>
+				<td width='50' align='center'>{$v.id}</td>
+				<td width='120' align='center'>{$v.adminusername}</td>
+				<td align='center'>
+					{$v.rname}
+				</td>
+				<td align='center'>{$v.lasttime|date='y-m-d H:i', ###}</td>
+				<td align='center'>{$v.lastip}</td>
+				<td width='60' align='center'>
+					<if condition='$v["locked"]'>锁定
+					<else />
+					开放
+					</if>
+				</td>
+				<if condition='$_SESSION["adminusername"]=="admin"'>
+					<td width='240'>
+						<if condition='$v["adminusername"]=="admin"'>
+							
+						<else />
+						   <if condition='$v["locked"]'>
+								<a href="{:U('lockAdmin', array('id' => $v['id'], 'locked' => 0))}" class='add lock'>解除锁定</a>
+							<else/>
+								<a href="{:U('lockAdmin', array('id' => $v['id'], 'locked' => 1))}" class='add lock'>锁定用户</a>
+							</if>
+							
+						</if>
+					</td>
+				</if>
+				<td>
+				<if condition='$v["adminusername"]=="admin"'>
+							
+			    <else />
+				<a href='{:U("edit", array("id" => $v["id"]))}' class='edit'></a>
+				<a href='{:U("del", array("id" => $v["id"]))}' class='del'></a>
+				</if>
+				</td>
+			</tr>
+		</foreach>
+	</table>
+ 
