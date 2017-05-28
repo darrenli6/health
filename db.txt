@@ -9,6 +9,16 @@ create table czxy_admin(
     locked  tinyint default 1 comment '0为锁定1为开放'
 )engine=InnoDB default charset=utf8 comment '管理员列表';
 
+
+alter table czxy_admin add feedback bigtext null comment '反馈内容';
+
+create table czxy_illitem(
+   id int unsigned primary key auto_increment comment 'id',
+   itemname int unsigned not null comment '项目名称',
+   itemvalue varchar(100) not null comment '项目值',
+   addtime varchar(100) not null comment '时间'
+)engine=InnoDB default charset=utf8 comment '病历项目';
+
 alter table czxy_admin add index(adminusername);
 //管理员角色
 create table czxy_adminrole(

@@ -25,6 +25,48 @@ Class AdminAction extends CommonAction {
 		$this->display();
 	}
 
+	
+	public function addinfo(){
+	    
+	    $id=$this->_get('id');
+	    if($this->isPost()){
+	        $data['id']=$id;
+	        $data['feedback']=$_POST['feedback'];
+	        if(M('Admin')->save($data))
+	        {
+	           $this->success('反馈提交成功！',U('index')); 
+	           
+	        }else{
+	           $this->error('反馈提交失败');
+	        }
+	        die;
+	    }
+	    $this->feedback=M('Admin')->field('feedback')->find($id);
+	    
+	    $this->display();
+	    
+	}
+	
+	public function myask(){
+	     
+	    $id=session('uid');
+	    if($this->isPost()){
+	        $data['id']=$id;
+	        $data['myask']=$_POST['myask'];
+	        if(M('Admin')->save($data))
+	        {
+	            $this->success('互动提交成功！',U('myask'));
+	
+	        }else{
+	            $this->error('互动提交失败');
+	        }
+	        die;
+	    }
+	    $this->feedback=M('Admin')->field('myask')->find($id);
+	     
+	    $this->display();
+	     
+	}
 	/**
 	 * 添加后台管理员
 	 */
@@ -168,6 +210,100 @@ Class AdminAction extends CommonAction {
 		$this->display();
 	}
   
+	
+	public function showfeedback(){
+	    
+	    $id=session('uid');
+
+	    $this->feedback=M('admin')->field('feedback')->find($id);
+	  
+	    $this->display();
+	}
+	public function showask(){
+	     
+	    $id=$this->_get('id');
+	
+	    $this->feedback=M('admin')->field('myask')->find($id);
+	     
+	    $this->display();
+	}
+	
+	public function showline(){
+	    $id=$this->_get('id','intval');
+	    
+	     $data=M('illitem')
+	    ->field('UNIX_TIMESTAMP(addtime) addtime,itemvalue')
+	    ->where(
+	      array(
+	      'uid'=>array('eq',$id),  
+	      )
+	    )
+	    ->order('addtime ASC')
+	    ->select();
+	    $this->h=$this->handleHorizonal($data);
+	     
+	    $this->tdata=M('illitem')
+	    ->field('UNIX_TIMESTAMP(addtime) addtime,itemvalue')
+	    ->where(
+	      array(
+	      'uid'=>array('eq',$id),
+	      'itemname'=>array('eq',1)    
+	      )
+	    )
+	    ->order('addtime ASC')
+	    ->select();
+	    
+	    $this->ydata=M('illitem')
+	    ->field('UNIX_TIMESTAMP(addtime) addtime,itemvalue')
+	    ->where(
+	        array(
+	            'uid'=>array('eq',$id),
+	            'itemname'=>array('eq',2)
+	        )
+	    )
+	    ->order('addtime ASC')
+	    ->select();
+	    $this->t='';
+	    
+	    foreach($this->tdata as $k=>$v)
+	    {   
+	        $this->t.='['.$v[addtime].','.$v[itemvalue].'],';
+	    }
+	    
+	    $this->t=rtrim($this->t,',');
+	    
+	    $this->y='';
+	     
+	    foreach($this->ydata as $k=>$v)
+	    {    
+	    $this->y.='['.$v[addtime].','.$v[itemvalue].'],';
+	    }
+	     
+	    $this->y=rtrim($this->y,',');
+	    
+	    $this->display();
+	}
+	
+	private function handleHorizonal($data){
+	    
+
+	    $length=count($data);
+	    $max=$data[$length-1]['addtime'];
+	    $min=$data[0]['addtime'];
+	    $level=($max-$min)/$length;
+	    $h='[';
+	     
+	    foreach($data as $k=>$v)
+	    {  
+	     $a=0;
+	    $a+=$data[0]['addtime']+$k*$level;
+	    $h.=$a.',';
+	    }
+	    $h=rtrim($h,',');
+	    $h.=']';
+	    return $h;
+	     
+	}
 	/*
 	 * check username is unique
 	 * */
@@ -185,5 +321,7 @@ Class AdminAction extends CommonAction {
 	   else  return false;
 	}
 	 
+	
+
 }
 ?>

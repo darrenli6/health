@@ -1,0 +1,32 @@
+<layout name="layout" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /> 
+    <a href="{:U('addline')}" class='addbtn' ></a> 
+	<div class='status'>
+		<span>{$title}</span>
+	</div>
+	<table class="table">
+		<tr>
+		    <th>ID</th>
+			<th>名称</th>
+			<th>时间</th>
+			<th>值</th>
+			
+			<th>操作</th>
+		</tr>
+		<?php foreach($illitem as $k=>$v): ?>
+			<tr>
+			    <td><?php echo $v['id']; ?></td>
+				<td><?php echo $v['itemname']==1?'血糖':'血压'; ?></td>
+				<td><?php echo $v['addtime']; ?></td>
+				<td><?php echo $v['itemvalue']; ?>
+				    <?php echo $v['itemname']==1?'mmol/L':'mmhg'; ?>
+				</td>
+			
+				<td width='240'>
+                <a href="{:U('editline', array('id' => $v['id']))}" class='edit'></a>
+				<a href="{:U('delline', array('id' => $v['id']))}" class='del'></a>
+				</td>
+			</tr>
+		<?php endforeach; ?>
+	</table>
+ 

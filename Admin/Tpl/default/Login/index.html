@@ -9,13 +9,7 @@
     <script type="text/javascript" src='__PUBLIC__/Js/JqueryUI/jquery-ui-1.9.2.min.js'></script>
     <script type="text/javascript" src='__PUBLIC__/Js/login.js'></script>
 </head>
-<body>
-    <div id='top'>
-        <a href='http://www.houdunwang.com' target='_blank'>
-            <img src='__PUBLIC__/Images/blogo.png' width='270' height='52'/>
-        </a>
-        <a href='__ROOT__' class='home'>-前端首页-</a>
-    </div>
+<body> 
     <div id='main'>
         <div id="login">
             <p class='user_logo'><b>登录</b></p>
@@ -41,6 +35,6 @@
             </div>
         </div>
     </div>
-    <div id='dialog'></div>
+     
 </body>
 </html>

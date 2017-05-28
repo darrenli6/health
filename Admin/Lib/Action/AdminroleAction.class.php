@@ -6,7 +6,7 @@ Class AdminroleAction extends CommonAction {
  
 
 	/**
-	 * 后台管理员列表
+	 * Admin list
 	 */
 	Public function index () {
 		$this->data = M('Adminrole')

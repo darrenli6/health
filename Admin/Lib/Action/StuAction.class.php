@@ -39,6 +39,7 @@ class StuAction extends CommonAction {
     }
     
     
+    
     public function add(){
         
         if ($this->isPost()) {

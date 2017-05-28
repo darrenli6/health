@@ -21,13 +21,16 @@ body {
 }
 #main {
 	width:100%;
-	height:500px;
-	background: url('../Images/login_body.jpg') repeat-x;
+	height:625px;
+	background: url('../Images/back.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
 }
 #login {
 	width: 450px;
 	height: 300px;
-	margin: 0 auto;
+	margin: 159px auto;
 	display: none;
 	color:#444;
 }

@@ -48,6 +48,9 @@
 					</td><?php endif; ?>
 				<td>
 				<?php if($v["adminusername"]=="admin"): else: ?>
+			      <a href='<?php echo U("showline", array("id" => $v["id"]));?>' >血糖血压</a>
+			     <a href='<?php echo U("showask", array("id" => $v["id"]));?>' >教师诉求</a>
+			    <a href='<?php echo U("addinfo", array("id" => $v["id"]));?>' >反馈信息</a>
 				<a href='<?php echo U("edit", array("id" => $v["id"]));?>' class='edit'></a>
 				<a href='<?php echo U("del", array("id" => $v["id"]));?>' class='del'></a><?php endif; ?>
 				</td>

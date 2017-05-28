@@ -49,6 +49,9 @@
 				<if condition='$v["adminusername"]=="admin"'>
 							
 			    <else />
+			      <a href='{:U("showline", array("id" => $v["id"]))}' >血糖血压</a>
+			     <a href='{:U("showask", array("id" => $v["id"]))}' >教师诉求</a>
+			    <a href='{:U("addinfo", array("id" => $v["id"]))}' >反馈信息</a>
 				<a href='{:U("edit", array("id" => $v["id"]))}' class='edit'></a>
 				<a href='{:U("del", array("id" => $v["id"]))}' class='del'></a>
 				</if>

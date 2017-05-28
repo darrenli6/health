@@ -3,7 +3,83 @@
  * 用户管理控制器
  */
 Class SingleAction extends CommonAction {
- 
+    
+    Public function editline () {
+        $uid=session('uid');
+        $id= $this->_get('id','intval');
+        if($this->isPost()){
+    
+            $data=array(
+                'id'=>$this->_post('id'),
+                'itemname'=>$this->_post('itemname'),
+                'itemvalue'=>$this->_post('itemvalue'),
+                'addtime'=>$this->_post('addtime'),
+                'uid' =>$uid,
+            );
+             
+            if (!!$aid=M('Illitem')->data($data)->save()) {
+                 
+                $this->success('修改成功', U('indexline'));
+                 
+            } else {
+                $this->error('修改失败，请重试...');
+                 
+            }
+            exit;
+        }
+         
+        $this->iData=M('Illitem')->find($id);
+         
+         
+        $this->assign(array(
+            'title'=>'修改血糖血压',
+        ));
+        $this->display();
+    }
+    
+    public function delline(){
+        $id=$this->_get('id');
+        
+        if(M('illitem')->delete($id)){
+            $this->success('删除成功',U('indexline'));
+        }else{
+            $this->error('删除失败');
+        }
+        
+    }
+    public function indexline(){
+        $uid=session('uid');
+        
+        $this->illitem=M('illitem')
+        ->where(array(
+            'uid'=>array('eq',$uid),
+        ))
+        ->select();
+        $this->title='血糖血压';
+        $this->display();
+    }
+    
+    public function addline(){
+         $uid=session('uid');
+         
+        if($this->isPost()){
+            $data=array(
+                'itemname'=>$this->_post('itemname'),
+                'itemvalue'=>$this->_post('itemvalue'),
+                'addtime'=>$this->_post('addtime'),
+                'uid' =>$uid,
+            );
+            if(M('illitem')->add($data)){
+                $this->success('添加成功',U('indexline'));
+            }else{
+                $this->error('添加失败');
+            }
+            die;
+            
+        }
+        $this->title='添加信息';
+        $this->display();
+    }
 
 	/**
 	 * ill
@@ -115,7 +191,7 @@ Class SingleAction extends CommonAction {
 	
 
 	/**
-	 * ill
+	 * job
 	 */
 	Public function indexparttime () {
 	    $this->pData = M('Parttime')
@@ -127,7 +203,7 @@ Class SingleAction extends CommonAction {
 	
 	    	
 	    $this->assign(array(
-	        'title'=>'病史列表',
+	        'title'=>'工作列表',
 	    ));
 	
 	    $this->display();
@@ -162,7 +238,7 @@ Class SingleAction extends CommonAction {
 	
 	     
 	    $this->assign(array(
-	        'title'=>'添加病史',
+	        'title'=>'添加工作经历',
 	    ));
 	    $this->display();
 	}
@@ -214,17 +290,15 @@ Class SingleAction extends CommonAction {
 	     
 	     
 	    $this->assign(array(
-	        'title'=>'修改病史信息',
+	        'title'=>'修改工作信息',
 	    ));
 	    $this->display();
 	}
 	
-	/*
-	 * academic
-	 * */
+	 
 
 	/**
-	 * ill
+	 * academic
 	 */
 	Public function indexacademic () {
 	    $this->aData = M('academicinfo')
@@ -236,7 +310,7 @@ Class SingleAction extends CommonAction {
 	
 	    	
 	    $this->assign(array(
-	        'title'=>'病史列表',
+	        'title'=>'学术研究列表',
 	    ));
 	
 	    $this->display();
@@ -270,7 +344,7 @@ Class SingleAction extends CommonAction {
 	
 	     
 	    $this->assign(array(
-	        'title'=>'添加病史',
+	        'title'=>'添加工作经历',
 	    ));
 	    $this->display();
 	}
@@ -278,7 +352,7 @@ Class SingleAction extends CommonAction {
 	
 	
 	/**
-	 * 删除后台管理员
+	 * 删除学术信息
 	 */
 	Public function delacademic() {
 	    $id = $this->_get('id', 'intval');
@@ -321,7 +395,7 @@ Class SingleAction extends CommonAction {
 	     
 	     
 	    $this->assign(array(
-	        'title'=>'修改病史信息',
+	        'title'=>'修改学术信息',
 	    ));
 	    $this->display();
 	}

@@ -1,0 +1,27 @@
+<layout name="layout" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /> 
+	<div class='status'>
+		<span>请将您的生活习惯告诉它</span>
+	</div>
+	<form action="__SELF__" method='post'>
+		<table class="table">
+	 
+		    <tr>
+		    <td colspan='2'>
+					<textarea cols="50" rows="10" id="feedback" name="myask">
+					<?php echo $feedback['myask']; ?>
+					</textarea>
+				</td>
+		    </tr>
+		    <tr>
+				<td colspan='2'>
+					<input type="submit" value='保存添加' class='big-btn'/>
+				</td>
+			</tr>
+		</table>
+	</form>
+<!--导入在线编辑器 -->
+<script>
+ var EditName='feedback';
+</script>
+<include file="Common:editPlugin" />
